@@ -1,0 +1,23 @@
+[
+  {
+    "run": "01_baseline_glm52_top20",
+    "accuracy": 0.7967532467532468,
+    "correct": 1227,
+    "total": 1540,
+    "errors": 0
+  },
+  {
+    "run": "02_deterministic_fusion_top200",
+    "accuracy": 0.9383116883116883,
+    "correct": 1445,
+    "total": 1540,
+    "errors": 1
+  },
+  {
+    "run": "03_real_semantic_fusion_top200",
+    "accuracy": 0.9525974025974026,
+    "correct": 1467,
+    "total": 1540,
+    "errors": 2
+  }
+]

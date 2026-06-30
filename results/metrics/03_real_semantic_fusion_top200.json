@@ -1,0 +1,55 @@
+{
+  "run": "03_real_semantic_fusion_top200",
+  "description": "Real-semantic (E5 prefix fix) + 6-query fusion + dual RRF + thinking ON",
+  "metadata": {
+    "benchmark": "locomo",
+    "run_mode": "full",
+    "answerer_model": "glm-5.2",
+    "judge_model": "glm-5.2",
+    "enable_thinking": true,
+    "top_k": 200,
+    "categories": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "total_questions": 1540,
+    "max_workers": 8,
+    "rpm": 150
+  },
+  "metrics": {
+    "overall": {
+      "total": 1540,
+      "correct": 1467,
+      "errors": 2,
+      "accuracy": 0.9525974025974026
+    },
+    "by_category": {
+      "multi-hop": {
+        "total": 282,
+        "correct": 269,
+        "errors": 0,
+        "accuracy": 0.9539007092198581
+      },
+      "open-domain": {
+        "total": 96,
+        "correct": 75,
+        "errors": 0,
+        "accuracy": 0.78125
+      },
+      "single-hop": {
+        "total": 841,
+        "correct": 812,
+        "errors": 2,
+        "accuracy": 0.9655172413793104
+      },
+      "temporal": {
+        "total": 321,
+        "correct": 311,
+        "errors": 0,
+        "accuracy": 0.9688473520249221
+      }
+    }
+  }
+}

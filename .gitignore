@@ -1,0 +1,25 @@
+# 数据集（需自行获取，勿提交）
+locomo10.json
+locomo*.json
+
+# HMG stores 与检索产物（含对话原文，体积大）
+benchmark_stores/
+benchmark_stores_*/
+*_stores*/
+*_retrieval*.json
+fused_*.json
+retrieval_*.json
+frozen_*.json
+
+# E2E 运行产物（per_question 含对话片段）
+*_run/
+results_run/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# OS
+.DS_Store

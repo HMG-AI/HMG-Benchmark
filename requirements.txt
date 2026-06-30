@@ -1,0 +1,4 @@
+openai>=1.50
+tokenizers>=0.19
+onnxruntime>=1.17
+numpy>=1.24

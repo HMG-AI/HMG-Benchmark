@@ -1,0 +1,53 @@
+{
+  "run": "01_baseline_glm52_top20",
+  "description": "GLM-5.2 baseline (original frozen top-20 retrieval, thinking OFF)",
+  "metadata": {
+    "benchmark": "locomo",
+    "run_mode": "full",
+    "answerer_model": "glm-5.2",
+    "judge_model": "glm-5.2",
+    "enable_thinking": false,
+    "top_k": 20,
+    "categories": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "total_questions": 1540
+  },
+  "metrics": {
+    "overall": {
+      "total": 1540,
+      "correct": 1227,
+      "errors": 0,
+      "accuracy": 0.7967532467532468
+    },
+    "by_category": {
+      "multi-hop": {
+        "total": 282,
+        "correct": 206,
+        "errors": 0,
+        "accuracy": 0.7304964539007093
+      },
+      "open-domain": {
+        "total": 96,
+        "correct": 59,
+        "errors": 0,
+        "accuracy": 0.6145833333333334
+      },
+      "single-hop": {
+        "total": 841,
+        "correct": 689,
+        "errors": 0,
+        "accuracy": 0.8192627824019025
+      },
+      "temporal": {
+        "total": 321,
+        "correct": 273,
+        "errors": 0,
+        "accuracy": 0.8504672897196262
+      }
+    }
+  }
+}

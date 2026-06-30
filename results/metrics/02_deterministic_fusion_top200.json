@@ -1,0 +1,55 @@
+{
+  "run": "02_deterministic_fusion_top200",
+  "description": "Deterministic-hash + 6-query fusion + dual RRF + thinking ON",
+  "metadata": {
+    "benchmark": "locomo",
+    "run_mode": "full",
+    "answerer_model": "glm-5.2",
+    "judge_model": "glm-5.2",
+    "enable_thinking": false,
+    "top_k": 200,
+    "categories": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "total_questions": 1540,
+    "max_workers": 4,
+    "rpm": 120
+  },
+  "metrics": {
+    "overall": {
+      "total": 1540,
+      "correct": 1445,
+      "errors": 1,
+      "accuracy": 0.9383116883116883
+    },
+    "by_category": {
+      "multi-hop": {
+        "total": 282,
+        "correct": 268,
+        "errors": 1,
+        "accuracy": 0.950354609929078
+      },
+      "open-domain": {
+        "total": 96,
+        "correct": 79,
+        "errors": 0,
+        "accuracy": 0.8229166666666666
+      },
+      "single-hop": {
+        "total": 841,
+        "correct": 790,
+        "errors": 0,
+        "accuracy": 0.93935790725327
+      },
+      "temporal": {
+        "total": 321,
+        "correct": 308,
+        "errors": 0,
+        "accuracy": 0.9595015576323987
+      }
+    }
+  }
+}
